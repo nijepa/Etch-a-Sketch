@@ -1,0 +1,73 @@
+html {
+  text-align: center;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+body {
+  display: grid;
+}
+
+.right {
+  /* float: right; */
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  /* margin: 2px; */
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.page {
+  /* float: left; */
+  align-self: center;
+  margin: auto;
+}
+
+#quantity {
+  font-size: 2em;
+  width: 2.5em;
+}
+
+.reset {
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(21, 101, 194) 50%, rgb(69, 8, 139) 50%);
+  background-size: 200% 100%;
+  background-position:left top;
+  transition:all 1s ease;
+}
+
+.reset:hover{
+  background-position:right top;
+  color: white;
+}
+
+.left {
+  display: inline-block;
+}
+
+.square {
+  background-color: white;
+  /* border: 1px solid black; */
+}
+
+.color {
+/*   background-color: gray;
+  border: 1px solid black; */
+}
+
+.gridContainer {
+/*   margin-top: 25px;
+  margin-right: 40px; */
+  cursor: crosshair;
+  margin: .3em;
+  display: inline-grid;
+  grid-template-columns: repeat(16, 2fr);
+  grid-template-rows: repeat(16, 2fr);
+  border: 2px solid black;
+  height: 575px;
+  width: 575px;
+/*   background-color: white;
+  transition: background-color 2s; */
+}
